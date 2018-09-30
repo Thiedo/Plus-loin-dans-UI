@@ -10,6 +10,7 @@ import UIKit
 
 class CycleEtFrameController: UIViewController {
 
+    @IBOutlet weak var vueFrameEtBounds: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
          print("viewDidload")
@@ -23,6 +24,15 @@ class CycleEtFrameController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         print("viewDidAppear")
+        print("Frame -> :\(vueFrameEtBounds.frame)")  // frame c'est par rapport a la vue qui la contient
+        print("Bounds -> :\(vueFrameEtBounds.bounds)")// bounds c'est par rapport à lui même
+        
+        UIView.animate(withDuration: 2, animations: {
+            self.vueFrameEtBounds.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi) / 12)
+        }) { (succes) in
+            print("Frame -> :\(self.vueFrameEtBounds.frame)")  // frame c'est par rapport a la vue qui la contient
+            print("Bounds -> :\(self.vueFrameEtBounds.bounds)")// bounds c'est par rapport à lui même
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
