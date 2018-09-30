@@ -23,7 +23,7 @@ class ProgrammatiqueController: UIViewController {
         monPremierUIView?.backgroundColor = UIColor(red: 30/255, green: 123/255, blue: 90/255, alpha: 1)
         monPremierUIView?.layer.cornerRadius = 25
         guard monPremierUIView != nil else { return } // juste pour la sécurité (sinon pas la peine puisqu'on vient de crer notre vue (on peutmettre le point d'exclamation sans crainte)
-        view.addSubview(monPremierUIView!) // on le met en optionnel par qu'on vient juste de la créer (donc elle existe belle et bien)
+        scroll.addSubview(monPremierUIView!) // on le met en optionnel par qu'on vient juste de la créer (donc elle existe belle et bien)
 
         
         monPremierLabel = UILabel(frame: CGRect(x: 0, y: monPremierUIView!.frame.maxY + 20, width: view.frame.width, height: 50))

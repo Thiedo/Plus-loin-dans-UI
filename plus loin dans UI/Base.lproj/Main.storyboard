@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.26894292514114448" blue="0.14877557374038763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.99473634081587259" blue="0.20360200310583754" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Iu2-Jd-rMK"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="ZFc-s3-N27"/>
